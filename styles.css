@@ -1,0 +1,60 @@
+.img-div {
+    display: flex;
+    justify-content: center;
+    gap: 1px; /* Adds space between images for better readability */
+}
+
+#img-div {
+    background: linear-gradient(to bottom, 
+    rgba(255, 0, 0, 0) 0%,   /* Transparent Red */
+    rgba(255, 0, 0, 0.5) 10%, /* Fading In */
+    rgba(255, 0, 0, 1) 20%,   /* Solid Red */
+    rgba(255, 153, 0, 1) 35%, /* Orange */
+    rgba(255, 255, 0, 1) 50%, /* Yellow */
+    rgba(51, 204, 51, 1) 65%, /* Green */
+    rgba(51, 153, 255, 1) 80%, /* Blue */
+    rgba(153, 0, 204, 1) 95%,  /* Purple */
+    rgba(153, 0, 204, 0) 100%  /* Fade Out */);
+    padding: 8px; /* Gives a slight separation from other content */
+    width: 100%;
+}
+
+#image, #image2 {
+    border: 2px solid #DDDDDD; /* Light gray border */
+    border-radius: 4px; /* Slight rounding for a cleaner look */
+}
+
+
+body {
+    font-family: 'Merriweather', serif; /* More readable */
+    font-size: 18px; /* Default text size */
+    line-height: 1.6; /* Improves spacing */
+    color: #222222; /* Dark but not too harsh */
+}
+#title {
+    text-align: center;
+    font-family: 'Merriweather', Courier, monospace;
+}
+
+#title h1 {
+    font-size: 48px; /* Slightly larger for emphasis */
+    font-weight: bold; /* Adds clarity */
+    color: #222222; /* Darker color for contrast */
+    letter-spacing: 1.5px; /* Improves spacing for readability */
+}
+
+#title h3 {
+    font-size: 22px; /* Slightly larger */
+    font-weight: 500; /* Medium weight */
+    color: #444444; /* Softer black for readability */
+}
+
+#tribute-info {
+    text-align: center; /* Centers text */
+}
+
+#tribute-info ul {
+    list-style-position: inside; /* Moves bullets inside the text */
+    display: inline-block; /* Allows centering */
+    text-align: left; /* Keeps text alignment natural */
+}
