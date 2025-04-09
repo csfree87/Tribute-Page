@@ -1,60 +1,78 @@
-.img-div {
-    display: flex;
-    justify-content: center;
-    gap: 1px; /* Adds space between images for better readability */
-}
-
 #img-div {
     background: linear-gradient(to bottom, 
-    rgba(255, 0, 0, 0) 0%,   /* Transparent Red */
-    rgba(255, 0, 0, 0.5) 10%, /* Fading In */
-    rgba(255, 0, 0, 1) 20%,   /* Solid Red */
-    rgba(255, 153, 0, 1) 35%, /* Orange */
-    rgba(255, 255, 0, 1) 50%, /* Yellow */
-    rgba(51, 204, 51, 1) 65%, /* Green */
-    rgba(51, 153, 255, 1) 80%, /* Blue */
-    rgba(153, 0, 204, 1) 95%,  /* Purple */
-    rgba(153, 0, 204, 0) 100%  /* Fade Out */);
-    padding: 8px; /* Gives a slight separation from other content */
+    rgba(255, 0, 0, 0) 0%,   
+    rgba(255, 0, 0, 0.5) 10%, 
+    rgba(255, 0, 0, 1) 20%,   
+    rgba(255, 153, 0, 1) 35%, 
+    rgba(255, 255, 0, 1) 50%, 
+    rgba(51, 204, 51, 1) 65%, 
+    rgba(51, 153, 255, 1) 80%, 
+    rgba(153, 0, 204, 1) 95%,  
+    rgba(153, 0, 204, 0) 100%);
+    padding: 40px;
     width: 100%;
+    text-align: center; /* Ensures everything inside is centered horizontally */
 }
 
-#image, #image2 {
-    border: 2px solid #DDDDDD; /* Light gray border */
-    border-radius: 4px; /* Slight rounding for a cleaner look */
+#image {
+    display: block; /* Makes it behave like a block-level element */
+    max-width: 100%; /* Ensures the image doesn't overflow its container */
+    height: auto; /* Maintains aspect ratio */
+    margin: 0 auto; /* Centers the image horizontally */
 }
 
+#image2 {
+    display: block; /* Makes it behave like a block-level element */
+    max-width: 100%; /* Ensures the second image doesn't overflow its container */
+    height: auto; /* Maintains aspect ratio */
+    margin: 0 auto; /* Centers the second image horizontally */
+}
+
+#img-caption {
+    text-align: center; /* Centers the caption */
+    margin-top: 10px; /* Adds space between the image and caption */
+    color: #eee;
+}
+
+#tribute-info {
+    text-align: center;
+}
+
+#tribute-info ul {
+    list-style-position: inside;
+    display: inline-block;
+    text-align: center; 
+    font-size: 18px;
+    width: 60%;
+}
 
 body {
-    font-family: 'Merriweather', serif; /* More readable */
-    font-size: 18px; /* Default text size */
-    line-height: 1.6; /* Improves spacing */
-    color: #222222; /* Dark but not too harsh */
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #222222;
+    text-align: center;
 }
+
 #title {
     text-align: center;
     font-family: 'Merriweather', Courier, monospace;
 }
 
 #title h1 {
-    font-size: 48px; /* Slightly larger for emphasis */
-    font-weight: bold; /* Adds clarity */
-    color: #222222; /* Darker color for contrast */
-    letter-spacing: 1.5px; /* Improves spacing for readability */
+    font-size: 48px;
+    font-weight: bold;
+    color: #222222;
+    letter-spacing: 1.5px;
 }
 
 #title h3 {
-    font-size: 22px; /* Slightly larger */
-    font-weight: 500; /* Medium weight */
-    color: #444444; /* Softer black for readability */
+    font-size: 22px;
+    font-weight: 500;
+    color: #444444;
 }
 
-#tribute-info {
-    text-align: center; /* Centers text */
-}
-
-#tribute-info ul {
-    list-style-position: inside; /* Moves bullets inside the text */
-    display: inline-block; /* Allows centering */
-    text-align: left; /* Keeps text alignment natural */
+a {
+    text-align: center; 
+    padding-left: 50px;
 }
